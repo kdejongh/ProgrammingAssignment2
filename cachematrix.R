@@ -1,5 +1,10 @@
 ## Put comments here that give an overall description of what your
 ## functions do
+# This source file contains 2 functions that are used to cache the inverse of a square matrix:
+#   'makeCacheMatrix':  creates a list wrapped around a matrix that contains functions to set/get the matrix data 
+#                       and set/get the matrix inverse
+#   'cacheSolve':       accepts a list created by 'makeCacheMatrix' and retrieves the inverse of the wrapped matrix.
+#                       The inverse is cached until the data of the wrapped matrix is changed.
 
 ## Write a short comment describing this function
 
