@@ -60,9 +60,11 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
-    # Returns the inverse of the matrix wrapped by 'x' (created by 'makeCacheMatrix'). The inverse is calculated the first time
-    # this function is called for a matrix and the calculated inverse is cached for following calls. 
-    # If the data of the matrix is changed the cached inverse will be reset to 'NULL' and calculated 
+    # Returns the inverse of the matrix wrapped by 'x' (created by 'makeCacheMatrix'). 
+    # The inverse is calculated the first time this function is called for a matrix and the calculated inverse 
+    # is cached for following calls. 
+    # If the data of the matrix is changed the cached inverse will be reset to 'NULL' and the inverse will be calculated 
+    # again the next time this function is called.
     # 
     # Args:
     #   x: a list created by 'makeCacheMatrix' that wraps a matrix and contains functions to get and cache 
